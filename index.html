@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shelby Green</title>
+    <link rel=icon href="https://image.flaticon.com/icons/svg/92/92602.svg">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+    <!-- FULL PAGE JS (scrolling) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+/* ------ universal styling  ------ */
+body, html { /* body, main styling */
+  height: 100%;
+  font-family: 'Nunito', helvetica, sans-serif;
+  font-weight: 400; /* regular */
+}
+
+h1 { /* styling of H1 */
+   font-family: 'Montserrat', helvetica, sans-serif;
+   font-weight: 700; /* bold */
+   font-size: 4.8em;
+}
+
+h2 {
+   font-size: 2.5em;
+   line-height: 1.4em;
+}
+
+h3 {
+   font-family: 'Montserrat', helvetica, sans-serif;
+   font-weight: 600; /* bold */
+   font-size: 2.9em;
+   margin-top: 0;
+   margin-bottom: 15px;
+}
+
+h4 {
+   font-size: 1.7em;
+   font-style: italic;
+   font-weight: 300; /* light */
+}
+
+p {
+   font-size: 1.4em;
+   line-height: 1.5em;
+}
+
+a {
+   text-decoration: none; color: black;
+   &:hover { text-decoration: none; color: black; }
+   &:visited { text-decoration: none; color: black; }
+   &:focus { text-decoration: none; color: black; }
+}
+
+a.button {
+   font-family: 'Montserrat', helvetica, sans-serif;
+   font-weight: 700; /* bold */
+   font-size: 1.1em;
+   text-align: center;
+   text-transform: uppercase;
+
+   background: transparent;
+   border: lightgray 4px solid;
+
+   padding: 5px 12px;
+
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+
+   &:hover {
+       border-color: $muted-blue;
+    }
+}
+
+div.row {
+    height: 100vh; /* fill full height of the browser window */
+}
+/* ------ navigation bar / projects menu  ------ */
+ul#projects-menu {
+    position: fixed;
+    top: 0; left: 0;
+    padding: 40px 8.333% 20px 0; margin-top: 0px;
+    background-color: white;
+    z-index: 70;
+    /* evenly distribute li's */
+    display: flex; justify-content: space-between;
+}
+    li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    a {
+        font-family: 'Montserrat', helvetica, sans-serif;
+        font-weight: 400; /* regular */
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+    li.active a { font-weight: 700; color: $muted-green; }
+    a:hover { color: $muted-green; }
+}
+}
+</style>
+
+<body>
+<!-- FULL WIDTH BOOTSTRAP CONTAINER -->
+<div class="container-fluid">
+<ul class="menu col-sm-offset-1 col-sm-11 hide-me" id="projects-menu">
+    <li data-menuanchor="projects"><a href="#robots" class="active">projects</a></li>
+    <li data-menuanchor="mobile"><a href="#web">mobile apps</a></li>
+    <li data-menuanchor="misc"><a href="#mobile">miscellany</a></li>
+    <li data-menuanchor="contact"><a href="#design">contact me</a></li>
+</ul>
+<div id="fullpage">
+    <div class="row section" id="intro-row">
+        <div class="col-sm-8 col-sm-offset-2" id="intro-text">
+            <h1>Howdy! I'm Shelby.</h1>
+            <h2>I'm a Chemical Engineering senior at Florida State who's excited about <strong style="color: #2ABCA4;">open data</strong>, <strong style="color: #1DD2DA;">urbanism</strong>, and <strong style="color: #17a7b1;">advancing sustainability</strong>.</h2>
+            <p>When I'm not doing <a class="underline" data-hover="homework" data-toggle="modal" data-target="#classes-modal">homework</a> or <a class="underline" data-hover="club activities" data-toggle="modal" data-target="#clubs-modal">club activities</a>, I enjoy <a href="/strava.html">biking</a>, engaging in local politics, and <a class="underline" data-hover="jumping" data-toggle="modal" data-target="#jump-modal">doodling</a>.</p>
+            <div style="text-align: center;">
+                <a href="#robots" class="button">see my projects</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS BELOW -->
+<!------------------->
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- BOOSTRAP -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- FULL PAGE JS (scrolling) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.2/jquery.fullPage.min.js"></script>
+
+<!-- MY JAVASCRIPT -->
+<script src="javascript.js"></script>
+
+</body>
+</html>
